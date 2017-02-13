@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Monk's Cafe</title>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body>
+
+<audio autoplay>
+  <source src="sounds/seinfeld.mp3" type="audio/mpeg">
+</audio
+		
+
+	<div class="wrapper">
+
+	<nav>
+		<ul class="nav-bar">
+			<li><a href="">Home</a></li>
+			<li><a href="">Reservations</a></li>
+			<li><a href="">Location</a></li>
+			<li><a href="">Reviews</a></li>
+			
+		</ul>
+	</nav>
+
+
+
+
+		<div class="surroundContainer">
+		
+
+		<div class="hPage" id="home">
+			<h1>Monk's Cafe</h1>
+			<p>"The coffee shop"</p>	
+			<img id="restaurant-photo" src="images/toms-restaurant.jpg">
+		</div>
+
+
+
+
+
+
+		<div class="hPage" id="reservations">
+			<h1>We look forward to serve you</h1>
+
+			<form id="reservation-form">
+				<h2>Make a reservation</h2>
+				<br><br>
+				<p class="label">Name:</p>
+				
+				<input class="name-input" type="text" placeholder="Jane Doe">
+				<br><br>	
+				<p class="label">Day:</p>
+				
+				<input  class="datepicker" type="text" placeholder="MM/DD/YYYY">
+				
+				<br><br><br>
+				<button type="submit">Submit</button>
+
+			</form>
+
+			<div id="reservation-list-container">
+			<h2>Waitlist</h2>
+			
+				<table id="reservation-list">
+				<thead>
+				
+				
+					<th>Name</th>
+					<th>Day</th>
+				
+
+				</thead>
+			    
+			    <tbody> 
+			    <br>
+
+			    
+			    	<script id='entry-template' type="text/x-handlebars-template">
+					<tr>		     	
+				     	<td>{{name}}</td>
+				     	<td>{{day}}</td>		     	
+			  		</tr>
+			  		<br>
+			  		</script>	
+			    </tbody>
+				</table>
+				</div>
+		</div>
+
+
+
+
+		<div class="hPage" id="location">
+			<h1>Come Dine with Us</h1>	
+			<br><br>
+			
+			<div id="map"></div>	
+			
+			<div id="address">
+				<h3>We are located at:</h3>
+				<br>
+				<p>2880 Broadway, New York, NY 10025</p>
+				<br>
+				<div id= "directions">
+					<h4>Directions:</h4>
+					<br>
+					<ul>
+					<script id="directions-template-transit" type="text/x-handlebars-template">
+						<li> Take the <img class="icon" src="{{trainNumber}}">{{busNumber}} {{vehicle}} towards {{headsign}} from {{departingStation}} to {{arrivingStation}} ({{numberOfStops}} stops)</li>		
+						<br>
+					</script>					
+					</ul>
+					<br>
+				</div>
+			</div>
+			
+		</div>
+
+
+
+
+
+		<div class="hPage" id="reviews">
+			<h1>What our Customers Have to Say!</h1>
+			
+			<img class='avatar' src='images/jerry.jpg'>
+			<p>“Big lettuce, big carrots, tomatoes like volleyballs.”</p>
+			<p> — Jerry Seinfeld, on The BIG Salad</p>
+			
+		</div>	
+
+
+		</div>
+		
+
+	</div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/handlebars-v4.0.5.js"></script>
+	 <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBf7JTDFpXwBXmiiM_tuch8KEttamDI6TY&callback=initMap" async defer></script>
+</html>

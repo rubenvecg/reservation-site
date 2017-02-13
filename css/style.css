@@ -1,0 +1,198 @@
+* {
+	margin: 0;
+
+}
+
+html, body{
+	height: 97%;
+	text-align: center;
+	font-family: sans-serif;	
+	margin: 0;	
+	background-color: #000015;
+}
+
+nav{
+	width: 80%;
+	margin: auto;
+	padding: 5px;
+}
+
+
+.nav-bar{
+	text-align: center;
+	background-color: transparent;
+	padding: 5px;
+}
+
+.nav-bar li{
+	list-style-type: none;
+	width: 160px;
+	height: 40px;
+	display: inline-block;
+	margin-right: 2px;
+	margin-left: 2px;
+
+	padding: 5px;
+	
+}
+
+.wrapper{
+	height: 96%;
+	overflow: hidden;
+}
+.surroundContainer{
+	height: 96%;
+	overflow: auto;
+	white-space: nowrap;
+}
+
+.hPage{
+	display: inline-block;
+	height: 96%;
+	width: 100%;
+	overflow: hidden;
+	
+	
+}
+
+img{
+	width: 70%;
+	height: 70%;
+	margin-top: 2%;
+	margin-bottom: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+nav ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+	color: rgba(255,255,255,1);
+	border: 1px dotted transparent;
+	text-shadow: 0 0 10px #f7e033 , 0 0 20px #f7e033 , 0 0 30px #f7e033 , 0 0 40px #fc7e00 , 0 0 70px #fc7e00 , 0 0 80px #fc7e00 , 0 0 100px #fc7e00 ;
+}
+
+a:hover, button:hover{
+	border-color: #fc7e00 transparent;
+
+}
+
+button{
+  border: 1px dotted transparent;
+  background: none;
+  color: rgba(255,255,255,1);
+  font-size: 16px;
+  text-shadow: 0 0 10px #f7e033 , 0 0 20px #f7e033 , 0 0 30px #f7e033 , 0 0 40px #fc7e00 , 0 0 70px #fc7e00 , 0 0 80px #fc7e00 , 0 0 100px #fc7e00 ;
+
+}
+
+#map{
+	float: left;
+	text-align: left;	
+	margin-left: 10%;
+	width: 500px;
+	height: 500px;
+	
+}
+
+#address{
+	width: 500px;
+	float:right;
+	text-align: center;	
+	margin-right:20%;
+	white-space: normal;
+	
+	
+}
+
+#directions{
+	text-align: left;	
+}
+
+ .name-input, .datepicker{
+	border-radius: 5px;
+	border: 2px solid #dadada;
+	float: right;
+	font-size: 20px;
+	width: 180px;
+}
+
+.name-input:focus, .datepicker:focus{
+	outline:0;
+    box-shadow:0 0 20px #fc7e00;
+}
+
+
+
+
+.avatar{
+	width: 50%;
+	height: 60%;
+	margin-bottom: 0;
+}
+
+.icon{
+	width: 15px;
+	height: 15px;
+	margin: 1px;
+}
+
+h1{
+	margin-top: 2%;
+}
+
+img{
+	width: 70%;
+	height: 70%;
+	margin-top: 2%;
+	margin-bottom: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+th{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.label{
+	float: left;
+	font-size: 20px;
+	margin-right: 2px;
+
+}
+
+#reservation-form{
+	float: left;
+	text-align: center;	
+	margin-top: 8%;
+	margin-left: 30%;	
+}
+
+#reservation-list-container{
+	float:right;
+	text-align: center;	
+	margin-top: 8%;
+	margin-right:30%;
+}
+
+h1,h2,h3,h4,p,li,#reservation-list-container td,#reservation-list-container th{
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;  
+  border: none; 
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  
+  -o-text-overflow: clip;
+  text-overflow: clip;
+ 
+  text-shadow: 0 0 10px #f7e033 , 0 0 20px #f7e033 , 0 0 30px #f7e033 , 0 0 40px #fc7e00 , 0 0 70px #fc7e00 , 0 0 80px #fc7e00 , 0 0 100px #fc7e00 ;
+  
+}
+
+
+
+
